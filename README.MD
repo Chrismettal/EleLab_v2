@@ -15,12 +15,16 @@ Finished modules for printing yourself as well as building manuals for any modul
 
 1. [The concept](#concept)
 2. [The PCBs](#pcbs)
-    1. [Sub 1](#sub1_1)
-    2. [Sub 2](#sub1_2)
-3. [Paragraph 2](#par2)
-4. [Paragraph 3](#par3)
+3. [The modules](#mods)
+    1. [Supply from SFX](#sfx)
+    2. [Supply from XT60/Barrel](#infext)
+    3. [Lab PSU fixed](#suplfixed)
+    4. [Lab PSU variable](#suplvariable)
+    5. [Oscilloscope DSO138](#DSO138)
+    6. [Resistor decade](#rdec)
+    7. [Component tester](#comptest)
 
-## Modules still to do
+## Modules in progress
 
 1. Signal Tracer (Display and audio)
 2. Function Generator
@@ -48,7 +52,7 @@ TBD Pic of clipped parts
 
 All of the PCBs can be cheaply manufactured in China (trust me, it's easier and cheaper than you think) or sometimes i even have spares left, if you shoot me a message.
 
-### Bus100 / Bus150 
+### Bus100 / Bus150
 
 TBD Pic of Bus PCB
 
@@ -66,18 +70,32 @@ TBD Pic of Frontpanel_a
 
 Here we have the basic front panel breakout with industry style screw-plug connectors and USB jacks.
 
-### Sub 1 <a name="sub1_1"></a>
+## The modules <a name="mods"></a>
 
-Send help but smaller
+### Supply from SFX <a name="sfx"></a>
 
-### Sub 2 <a name="sub1_2"></a>
+TBD pic of SFX
 
-Send help but smaller again
+### Supply from XT60/Barrel <a name="infext"></a>
 
-## Paragraph 2 <a name="par2"></a>
+TBD pic of XT60
 
-Send big help again
+### Lab PSU fixed <a name="suplfixed"></a>
 
-## Paragraph 2 <a name="par3"></a>
+TBD pic of lab fixed
 
-I think i can see it now
+### Lab PSU variable <a name="suplvariable"></a>
+
+TBD pic of lab variable
+
+### Oscilloscope DSO138 <a name="DSO138"></a>
+
+TBD pic of DSO
+
+### Resistor decade <a name="rdec"></a>
+
+TBD pic of rdec
+
+### Component tester <a name="comptest"></a>
+
+TBD pic of comptest
