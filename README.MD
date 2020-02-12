@@ -9,7 +9,12 @@ I have made a set of modules already and am in the process of creating many more
 
 The system features a set of backpanel bus PCBs as well as panel breakout PCBs. While the backpanel bus is not neccesary, it keeps the system modular, hot swappable and tidy. You can have the gerbers manufactured for cheap at your favorite chinese PCB house or just shoot me a message. I might have spares.
 
-Finished modules for printing yourself as well as building manuals for any module can be found [here in my Thingiverse collection](https://www.thingiverse.com/Chrismettal/collections/elelab_v2).
+Finished modules for printing yourself for any module can be found [here in my Thingiverse collection](https://www.thingiverse.com/Chrismettal/collections/elelab_v2).
+
+If you like my work please consider supporting my caffeine addiction!
+
+<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
 
 ## Table of contents
 
@@ -48,6 +53,10 @@ If you are using the bus, individual modules just plug into each other to form a
 
 TBD Pic of clipped parts
 
+Almost none of the 3d printable pieces require supports. The frame of each module has integrated supports at one position, that you will need to cut away after printing:
+
+TBD Pic of cutaway support
+
 ## The PCBs <a name="pcbs"></a>
 
 All of the PCBs can be cheaply manufactured in China (trust me, it's easier and cheaper than you think) or sometimes i even have spares left, if you shoot me a message.
@@ -56,7 +65,7 @@ All of the PCBs can be cheaply manufactured in China (trust me, it's easier and 
 
 TBD Pic of Bus PCB
 
-This is the basic backpanel bus to link individual modules together. Though optional, it greatly enhances your experience in building this system. 
+This is the basic backpanel bus to link individual modules together. Though optional, it greatly enhances your experience in building this system.
 
 ### PowerFeed
 
@@ -68,7 +77,7 @@ This is the main infeed to connect your power supply to the backpanel bus and fe
 
 TBD Pic of Frontpanel_a
 
-Here we have the basic front panel breakout with industry style screw-plug connectors and USB jacks.
+Here we have the basic front panel breakout with industry style screw-plug connectors and USB jacks. The USB Jacks have a 0805 footprint in line with the 5 V rail so you can optionally install a tiny polyfuse in there. The data lines of each USB port are broken out so you can either use it for normal data transfer, or do whatever the best quick charge port configuration on the data lines is today. (for example bridging D+ and D- to put old Android phones into quick charge mode)
 
 ## The modules <a name="mods"></a>
 
@@ -76,26 +85,66 @@ Here we have the basic front panel breakout with industry style screw-plug conne
 
 TBD pic of SFX
 
+The easiest way to supply power to your EleLab is to use a regular SFX computer power supply. Using the PowerFeed PCB you can plug in the 24pin and 8pin connectors of your PSU directly into the backpanel bus. The module is preconfigured to use fuses for the 12 V and 5 V rails. You could install a switch for the PowerON PSU signal but i usually just bridge it completely so i switch the EleLab on and off by the main power switch on the back of the PSU.
+
+Make sure the fan of your PSU is exposed as in the picture as not to overheat your poor PSU.
+
 ### Supply from XT60/Barrel <a name="infext"></a>
 
 TBD pic of XT60
 
+With this supply module you can use any external 12 V or 24 V Power supply you want. You could even plug in some batteries with the XT60 jack!
+This module however needs some beefy DC-DC step-down converters to create the 5 V rail, as well as the 12 V rail if you are using a 24 V supply. 
+There is a printable tray that just snaps into the bottom, capable of carrying two of these types of step down converters:
+
+TBD pic of Stepdown
+
+These are readily available from china for a few bucks if you search for "step-down" on ebay.
+
 ### Lab PSU fixed <a name="suplfixed"></a>
 
-TBD pic of lab fixed
+The first actually usable module is a power breakout for your 5 V, 12 V and optionally 24 V rails. Using cheap chinese banana jacks with 12mm OD all rails can be accessed. In the front we use the Frontpanel_a PCB to have connections beside the banana jacks. Which terminal you connect to which rail is only dependend on your preferences. Obviously make sure to not reverse polarity on the USB ports or risk frying something. 
 
 ### Lab PSU variable <a name="suplvariable"></a>
 
 TBD pic of lab variable
 
+Similar to the fixed supply we use a Frontpanel_a PCB here. The two variable step down converters (ebay is your friend again, TBDnameOfStepDown) are fed by either the 24 V or 12 V rail, depending on your infeed capabilities. Under each converter i put two banana jacks as the output, but also in parallel i wire up the industrial screw-plug connectors in the front to be outputs as well. If you are feeling adventurous you can also but the USBs behind the converters, but be vary that you can potentially but up to 24 V through the USB port then if you tell the converter to do it. The USB Jack will not be a happy charging port but rather something for debugging.
+
 ### Oscilloscope DSO138 <a name="DSO138"></a>
 
 TBD pic of DSO
+
+The DSO138 is a great "Babies first oscilloscope". This super cheap thing is awesome if you don't wanna shell out serious cash if you are going to look at simple waveforms once per year and don't really care about accuracy a lot. Oftentimes i just wanna know IF something is even executing code and don't care HOW it is doing it so i often still fire up the DSO138.
+
+You have to remove the old power jack of the DSO138 PCB and feed in power directly out of the 12 V rail for this to fit. 4 x M3 screws with nuts fix the DSO PCB into the panel from the back. The BNC jack is also removed, a new frontpanel screw-in BNC jack is installed in the front, and wired up to where the original jack was. This is best done with a shielded cable (though i doubt you will see much difference with a DSO of this quality..)
 
 ### Resistor decade <a name="rdec"></a>
 
 TBD pic of rdec
 
+Not really needing a backpanel this can safely be placed as the last piece of the EleLab as it does not even require power. Basically this is just a snap in placement of TBD
+
+The 2 lines of the resistor decade are wired to two banana jacks. Also i installed 2 potentiometers into the panel, giving me some more flexibility. These are also just wired straight into 3 banana connectors. 
+
 ### Component tester <a name="comptest"></a>
 
 TBD pic of comptest
+
+You would not believe how much utility you will get out of these things. They are also very cheaply ordered from ebay, screw into the upper panel from the backside and can identify almost all of the components you throw at it. Usually these are fed by a 9 V battery and while you could till do that and have a battery lying inside the module i just feed it from the 12 V rail. Don't know about any longterm damages though.
+
+## Modules in progress
+
+I am currently working on the following modules:
+
+1. Signal Tracer (Display and audio)
+2. Function Generator
+3. Supply from Meanwell PSU
+4. Epaper + ESP8266
+5. Solder sponge / wire holder + TS100 output
+
+If you have an idea for other modules, go ahead, clone this repo and try creating your new module! Also be sure to upload it to thingiverse as a remix. If you don't know how to create a module yourself, feel free to send me a message!
+
+If you like my work please consider supporting my caffeine addiction!
+
+<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
