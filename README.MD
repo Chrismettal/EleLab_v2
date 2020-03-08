@@ -78,7 +78,7 @@ This is the basic backpanel bus to link individual modules together. Though opti
 
 ![PowerFeed](https://github.com/Chrismettal/EleLab_v2/blob/master/img/PowerFeed.png)
 
-This is the main infeed to connect your power supply to the backpanel bus and feed into the modules. It packs jacks to plug in your SFX supply, screw connectors for external fuses, and a breakout for the SFXs standby switch. Alternatively you could wire up your supplies directly to the spots marked as 24V, 12V and 5V respectively without using ATX connectors. 
+This is the main infeed to connect your power supply to the backpanel bus and feed into the modules. It packs jacks to plug in your SFX supply, screw connectors for external fuses, and a breakout for the SFXs standby switch. Alternatively you could wire up your supplies directly to the spots marked as 24V, 12V and 5V respectively without using ATX connectors.
 
 ### Frontpanel_a
 
@@ -166,35 +166,37 @@ I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
 
 You can keep the wires nice and short if you put together the modules as follows:
 
-![LabVar_0](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_0.jpg)
+### Wire up your frontpanels
 
-Wire up your frontpanels
+![LabVar_0](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_0.jpg)
 
 ![LabVar_1](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_1.jpg)
 
+### If your wires are long enough you can place and screw in your backpanel bus already
+
 ![LabVar_2](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_2.jpg)
 
-If your wires are long enough you can place and screw in your backpanel bus already.
+### Slide on the UPPER PANEL FIRST but don't do it all the way yet.
 
 ![LabVar_3](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_3.jpg)
 
-Slide on the UPPER PANEL FIRST but don't do it all the way yet.
+### Slide in the LOWER PANEL now. You will see how this requires much less wiring you need for this.
 
 ![LabVar_4](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_4.jpg)
 
-Slide in the LOWER PANEL now. You will see how this requires much less wiring you need for this.
+### Now slide on the upper panel fully.
 
 ![LabVar_5](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_5.jpg)
 
-Now slide on the upper panel fully.
+### The upper panel can be slid on now and the module is ready to be screwed together using two M2 screws each in the upper panel and the lid.
 
 ![LabVar_6](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_6.jpg)
 
-The upper panel can be slid on now and the module is ready to be screwed together using two M2 screws each in the upper panel and the lid.
+### If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame.
+
 
 ![TightScrew](https://github.com/Chrismettal/EleLab_v2/blob/master/img/TightScrew.jpg)
 
-If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame.
 
 ## Modules in progress
 
