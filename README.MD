@@ -100,6 +100,8 @@ Make sure the fan of your PSU is exposed as in the picture as not to overheat yo
 
 !IN PROGRESS!
 
+I have not printed this module yet so use with caution. If you use this before i do, be sure to drop me a message if it worked!
+
 With this supply module you can use any external 12 V or 24 V Power supply you want. You could even plug in some batteries with the XT60 jack!
 This module however needs some beefy DC-DC step-down converters to create the 5 V rail, as well as the 12 V rail if you are using a 24 V supply. 
 There is a printable tray that just snaps into the bottom, capable of carrying two of these types of step down converters:
