@@ -1,6 +1,6 @@
 # Elelab_v2
 
-![WholeSystem](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompleteNice.png)
+![WholeSystem](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompleteNice.jpg)
 
 This is a low cost, modular elctronics lab system for hobbyists.
 The customizable modules include fixed and variable power supplies, measurement tools, component testers and much more.
