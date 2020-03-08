@@ -43,14 +43,20 @@ If you like my work please consider supporting my caffeine addiction!
 The system consists of 3 basic sizes of modules, 100mm, 150mm and 200mm. For the 100mm and the 150mm frame there is a backpanel bus that interconnects the modules together for power delivery. The 200mm frame uses two of the 100mm PCBs.
 
 ![Interconnects](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Inter.jpg)
+![FrameWithPCB](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FrameWithPCB.jpg)
 
-For the modules we usually use one of the 3 base sizes and just punch holes in the upper and/or lower front panel to suit our mounting needs. This can be done in FreeCAD by modifying the BaseXXX file or a finished module that best fits your new module. Alternatively you can also just edit the .stl files in the editor of your choice.
+
+For the modules we usually use one of the 3 base sizes and punch holes in the upper and/or lower front panel to suit our mounting needs. This can be done in FreeCAD by modifying the BaseXXX file or a finished module that best fits your new module. Alternatively you can also just edit the .stl files in the editor of your choice.
 
 The backpanel bus is equipped to transfer 24 V, 12 V and 5 V (and GND, duh), which we feed into the system by one of the "Supply" modules. At the moment i made an SFX-PSU supply module (supplying 12 V and 5 V) and one with a 5.5mm barrel jack and XT60 jack (Using 24 V supplies and step-down converters for 12 V and 5 V). Both of these supply modules feature the PowerFeed PCB to feed into the backpanel bus. Because 24 V is rarely needed for most of the modules, the easiest and safest way to use this system is the SFX module, which just plugs into the PowerFeed PCB.
 
 Obviously you can just run wires between the modules and omit the backpanel bus, but it will probably make me a little sad.
 
-If you are using the bus, individual modules just plug into each other to form a single unit. With 2 little printed clips you can secure the modules together so they don't seperate during the occasional earthquake or lab-ragequit.
+If you are using the bus, individual modules just plug into each other to form a single unit. 
+
+![FirstDocked2](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FirstDocked2.jpg)
+
+With 2 little printed clips you can secure the modules together so they don't seperate during the occasional earthquake or lab-ragequit.
 
 ![Clip](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Clip.jpg)
 
