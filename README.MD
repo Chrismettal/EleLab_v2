@@ -74,17 +74,35 @@ All of the PCBs can be cheaply manufactured in China (trust me, it's easier and 
 
 This is the basic backpanel bus to link individual modules together. Though optional, it greatly enhances your experience in building this system.
 
+**Parts:**
+
+- 2pcs 2.54mm Pinheader right angle 2x8 female
+- 2pcs 2.54mm Pinheader right angle 2x8 male
+
 ### PowerFeed
 
 ![PowerFeed](https://github.com/Chrismettal/EleLab_v2/blob/master/img/PowerFeed.png)
 
 This is the main infeed to connect your power supply to the backpanel bus and feed into the modules. It packs jacks to plug in your SFX supply, screw connectors for external fuses, and a breakout for the SFXs standby switch. Alternatively you could wire up your supplies directly to the spots marked as 24V, 12V and 5V respectively without using ATX connectors.
 
+**Parts:**
+
+- 24 Pin 4.2mm ATX Connector standing 
+-  8 Pin 4.2mm ATX Connector standing
+- 6pcs 5.08mm 2 Pin screw terminal (The blue cheap ones, optional though)
+
 ### Frontpanel_a
 
 ![Frontpanel_a](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Frontpanel_a_1.jpg)
 
 Here we have the basic front panel breakout with industry style screw-plug connectors and USB jacks. The USB Jacks have a 0805 footprint in line with the 5 V rail so you can optionally install a tiny polyfuse in there. The data lines of each USB port are broken out so you can either use it for normal data transfer, or do whatever the best quick charge port configuration on the data lines is today. (for example bridging D+ and D- to put old Android phones into quick charge mode)
+
+**Parts:**
+
+- 2pcs 5.08mm pcb screw terminal block 4 pin
+- 2pcs standing vertical USB Ports
+- 2pcs 0805 polyfuse 1.1A (Or your desired amperage)
+
 
 ## The modules <a name="mods"></a>
 
@@ -95,6 +113,14 @@ Here we have the basic front panel breakout with industry style screw-plug conne
 The easiest way to supply power to your EleLab is to use a regular SFX computer power supply. Using the PowerFeed PCB you can plug in the 24pin and 8pin connectors of your PSU directly into the backpanel bus. The module is preconfigured to use fuses for the 12 V and 5 V rails. You could install a switch for the PowerON PSU signal but i usually just bridge it completely so i switch the EleLab on and off by the main power switch on the back of the PSU.
 
 Make sure the fan of your PSU is exposed as in the picture as not to overheat your poor PSU.
+
+**Parts:**
+
+- PowerFeed PCB
+- 2pcs screw in fuse holder panel mount
+- SFX PSU of your choice
+- 5pcs M2x8 self tapping screws
+
 
 ### Supply from XT60/Barrel <a name="infext"></a>
 
@@ -124,11 +150,28 @@ Be sure to bend over your connectors as seen here as there is not extremely much
 
 ![LabFixedSlide](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabFixedSlide.jpg)
 
+**Parts:**
+
+- 12 or 18pcs banana jacks
+- Bus100 PCB
+- Frontpanel_a PCB
+- 10pcs M2x8 self tapping screws
+
+
 ### Lab PSU variable <a name="suplvariable"></a>
 
 ![LabVar](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_done.jpg)
 
 Similar to the fixed supply we use a Frontpanel_a PCB here. The two variable step down converters (ebay is your friend again, TBDnameOfStepDown) are fed by either the 24 V or 12 V rail, depending on your infeed capabilities. Under each converter i put two banana jacks as the output, but also in parallel i wire up the industrial screw-plug connectors in the front to be outputs as well. If you are feeling adventurous you can also but the USBs behind the converters, but be vary that you can potentially but up to 24 V through the USB port then if you tell the converter to do it. The USB Jack will not be a happy charging port but rather something for debugging.
+
+**Parts:**
+
+- 2pcs DPS30005 or similar step down converter. You can get these in all voltage ranges under different names.
+- 4pcs banana jacks
+- Bus100 PCB
+- Frontpanel_a PCB
+- 10pcs M2x8 self tapping screws
+
 
 ### Oscilloscope DSO138 <a name="DSO138"></a>
 
@@ -137,6 +180,14 @@ Similar to the fixed supply we use a Frontpanel_a PCB here. The two variable ste
 The DSO138 is a great "Babies first oscilloscope". This super cheap thing is awesome if you don't wanna shell out serious cash if you are going to look at simple waveforms once per year and don't really care about accuracy a lot. Oftentimes i just wanna know IF something is even executing code and don't care HOW it is doing it so i often still fire up the DSO138.
 
 You have to remove the old power jack of the DSO138 PCB and feed in power through a 13mmx19mm rocker switch out of the 12 V rail for this to fit. 4 x M3 screws with nuts fix the DSO PCB into the panel from the back. The BNC jack is also removed, a new frontpanel screw-in BNC jack is installed in the front, and wired up to where the original jack was. This is best done with a shielded cable (though i doubt you will see much difference with a DSO of this quality..)
+
+**Parts:**
+
+- DSO138 kit
+- 13mmx19mm rocker switch
+- Bus150 PCB
+- 4pcs M3 screws and nuts
+- 6pcs M2x8 self tapping screws
 
 ### Resistor decade <a name="rdec"></a>
 
@@ -153,6 +204,14 @@ Closing this module is tricky as well. You will need to NOT snap in the decade b
 
 ![RdecSLide](https://github.com/Chrismettal/EleLab_v2/blob/master/img/RdecSlide.jpg)
 
+**Parts:**
+
+- 7pcs Thumbwheel switches KSA-2 with the ending caps
+- 9pcs each of 1, 10, 100, 1k, 10k, 100k and 1M Ohm reistor
+- 2pcs 9mm potentiometers of your choice, i used 5K B and 25K B
+- 8pcs banana jacks
+- Bus100 PCB
+- 4pcs M2x8 self tapping screws
 
 ### Component tester <a name="comptest"></a>
 
@@ -163,6 +222,13 @@ You would not believe how much utility you will get out of these things. They ar
 ![CompTestWiring](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompTest_wiring.jpg)
 
 I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
+
+**Parts:**
+
+- Component Tester module
+- 3pcs banana jacks
+- Bus100 PCB
+- 9pcs M2x8 self tapping screws
 
 ## Tips and tricks <a name="tips"></a>
 
