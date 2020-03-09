@@ -150,6 +150,8 @@ Be sure to bend over your connectors as seen here as there is not extremely much
 
 ![LabFixedSlide](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabFixedSlide.jpg)
 
+The banana jacks are intentionally uncentered to make room for labeling on the left. I did not have time to create printable labels yet but i will get to it.
+
 **Parts:**
 
 - 12 or 18pcs banana jacks
