@@ -124,17 +124,24 @@ Make sure the fan of your PSU is exposed as in the picture as not to overheat yo
 
 ### Supply from XT60/Barrel <a name="infext"></a>
 
-!IN PROGRESS!
-
-I have not printed this module yet so use with caution. If you use this before i do, be sure to drop me a message if it worked!
+![24vDone](https://github.com/Chrismettal/EleLab_v2/blob/master/img/24vDone.jpg)
 
 With this supply module you can use any external 12 V or 24 V Power supply you want. You could even plug in some batteries with the XT60 jack!
 This module however needs some beefy DC-DC step-down converters to create the 5 V rail, as well as the 12 V rail if you are using a 24 V supply. 
 There is a printable tray that just snaps into the bottom, capable of carrying two of these types of step down converters:
 
-!IN PROGRESS!
+![24vDC](https://github.com/Chrismettal/EleLab_v2/blob/master/img/24vDC.jpg)
 
 These are readily available from china for a few bucks if you search for "step-down" on ebay.
+
+One of the converters will be set to output 5 V and one to output 12 V, when you supply the module with 24 V DC. This will give you all 3 voltages on the backpanel bus.
+
+**Parts:**
+
+- PowerFeed PCB
+- 3pcs screw in fuse holder panel mount
+- 2pcs DC-DC Step down converters
+- 9pcs M2x8 self tapping screws
 
 ### Lab PSU fixed <a name="suplfixed"></a>
 
