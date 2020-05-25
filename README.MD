@@ -21,7 +21,7 @@ If you like my work please consider supporting my caffeine addiction!
 1. [The concept](#concept)
 2. [The PCBs](#pcbs)
 3. [The modules](#mods)
-    1. [Supply from SFX](#sfx)
+    1. [Supply from ATX/SFX](#sfx)
     2. [Supply from XT60/Barrel](#infext)
     3. [Lab PSU fixed](#suplfixed)
     4. [Lab PSU variable](#suplvariable)
@@ -34,9 +34,8 @@ If you like my work please consider supporting my caffeine addiction!
 
 1. Signal Tracer (Display and audio)
 2. Function Generator
-3. Supply from external PSU
-4. Epaper + ESP8266
-5. Solder sponge / wire holder + TS100 output
+3. Epaper + ESP8266
+4. Solder sponge / wire holder + TS100 output
 
 ## The concept <a name="concept"></a>
 
@@ -106,13 +105,15 @@ Here we have the basic front panel breakout with industry style screw-plug conne
 
 ## The modules <a name="mods"></a>
 
-### Supply from SFX <a name="sfx"></a>
+### Supply from ATX/SFX <a name="sfx"></a>
 
 ![SFX](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FirstDocked.jpg)
 
-The easiest way to supply power to your EleLab is to use a regular SFX computer power supply. Using the PowerFeed PCB you can plug in the 24pin and 8pin connectors of your PSU directly into the backpanel bus. The module is preconfigured to use fuses for the 12 V and 5 V rails. You could install a switch for the PowerON PSU signal but i usually just bridge it completely so i switch the EleLab on and off by the main power switch on the back of the PSU.
+The easiest way to supply power to your EleLab is to use a regular ATX or SFX computer power supply. Using the PowerFeed PCB you can plug in the 24pin and 8pin connectors of your PSU directly into the backpanel bus. The module is preconfigured to use fuses for the 12 V and 5 V rails. You could install a switch for the PowerON PSU signal but i usually just bridge it completely so i switch the EleLab on and off by the main power switch on the back of the PSU.
 
 Make sure the fan of your PSU is exposed as in the picture as not to overheat your poor PSU.
+
+In the picture you see me build the SFX version of the module, the ATX version is printing at the time of writing this and is not tested yet.
 
 **Parts:**
 
@@ -281,9 +282,8 @@ I am currently working on the following modules:
 
 1. Signal Tracer (Display and audio)
 2. Function Generator
-3. Supply from external PSU
-4. Epaper + ESP8266
-5. Solder sponge / wire holder + TS100 output
+3. Epaper + ESP8266
+4. Solder sponge / wire holder + TS100 output
 
 If you have an idea for other modules, go ahead, clone this repo and try creating your new module! Also be sure to upload it to thingiverse as a remix. If you don't know how to create a module yourself, feel free to send me a message!
 
