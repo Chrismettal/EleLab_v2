@@ -134,7 +134,7 @@ There is a printable tray that just snaps into the bottom, capable of carrying t
 
 ![24vDC](https://github.com/Chrismettal/EleLab_v2/blob/master/img/24vDC.jpg)
 
-These are readily available from china for a few bucks if you search for "step-down" on ebay.
+These are readily available from china for a few bucks if you search for "step-down XL4016" on ebay. XL4016 is the name of the IC but it's the closest to a part number we get.
 
 One of the converters will be set to output 5 V and one to output 12 V, when you supply the module with 24 V DC. This will give you all 3 voltages on the backpanel bus.
 
@@ -142,7 +142,7 @@ One of the converters will be set to output 5 V and one to output 12 V, when you
 
 - PowerFeed PCB
 - 3pcs screw in fuse holder panel mount
-- 2pcs DC-DC Step down converters
+- 2pcs DC-DC Step down converters XL4016
 - 9pcs M2x8 self tapping screws
 
 ### Lab PSU fixed <a name="suplfixed"></a>
