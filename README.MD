@@ -273,7 +273,6 @@ You can keep the wires nice and short if you put together the modules as follows
 
 ### If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame.
 
-
 ![TightScrew](https://github.com/Chrismettal/EleLab_v2/blob/master/img/TightScrew.jpg)
 
 
@@ -283,7 +282,7 @@ I am currently working on the following modules:
 
 1. Signal Tracer (Display and audio)
 2. Function Generator
-3. Epaper + ESP8266
+3. Raspberry Pi
 4. Solder sponge / wire holder + TS100 output
 
 If you have an idea for other modules, go ahead, clone this repo and try creating your new module! Also be sure to upload it to thingiverse as a remix. If you don't know how to create a module yourself, feel free to send me a message!
