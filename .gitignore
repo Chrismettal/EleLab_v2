@@ -1,1 +1,6 @@
 **/_gitignored/*
+
+# FreeCAD backup files
+*.FCBak
+*.FCStd*
+!*.FCStd
