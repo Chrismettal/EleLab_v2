@@ -34,8 +34,9 @@ If you like my work please consider supporting my caffeine addiction!
   - [Resistor decade](#resistor-decade)
   - [Component tester](#component-tester)
   - [Raspberry Pi](#raspberry-pi)
-  - [Display / Signal Tracer](#display--signal-tracer)
+  - [Display](#display)
   - [Signal generator](#signal-generator)
+  - [Audio output / Signal tracer](#audio-output--signal-tracer)
   - [TS100 Soldering station](#ts100-soldering-station)
 - [Tips and tricks](#tips-and-tricks)
 - [New modules](#new-modules)
@@ -251,17 +252,31 @@ I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
 
 Currently waiting for parts to finish module.
 
-### Display / Signal Tracer
+Raspberry Pi carrier with USB / Ethernet / HDMI and GPIO broken out, including HAT compatible front plate.
+
+### Display
 
 Currently waiting for parts to finish module.
+
+7 Inch HDMI Display with touchscreen. HDMI and USB broken out.
 
 ### Signal generator
 
 Currently printing and building module.
 
+4-20mA / 2-10 V / PWM signal generator.
+
+### Audio output / Signal tracer
+
+Currently designing.
+
+Stereo speaker with amplifier.
+
 ### TS100 Soldering station
 
 Currently designing.
+
+Power output for TS100 soldering iron with sponge and wire. Possibly stand if I can manage to not burn plastic.
 
 ## Tips and tricks
 
