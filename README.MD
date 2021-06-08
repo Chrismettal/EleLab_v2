@@ -1,4 +1,4 @@
-# Elelab_v2
+# Elelab_v2 <!-- omit in toc -->
 
 ![WholeSystem](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompleteNice.jpg)
 
@@ -17,28 +17,30 @@ If you like my work please consider supporting my caffeine addiction!
 <a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-1. [The concept](#concept)
-2. [The PCBs](#pcbs)
-3. [The modules](#mods)
-    1. [Supply from ATX/SFX](#sfx)
-    2. [Supply from XT60/Barrel](#infext)
-    3. [Lab PSU fixed](#suplfixed)
-    4. [Lab PSU variable](#suplvariable)
-    5. [Oscilloscope DSO138](#DSO138)
-    6. [Resistor decade](#rdec)
-    7. [Component tester](#comptest)
-4. [Tips and Tricks](#tips)
+- [The concept](#the-concept)
+- [The PCBs](#the-pcbs)
+  - [Bus100 / Bus150](#bus100--bus150)
+  - [PowerFeed](#powerfeed)
+  - [Frontpanel_a](#frontpanel_a)
+- [The modules](#the-modules)
+  - [Supply from ATX/SFX](#supply-from-atxsfx)
+  - [Supply from XT60/Barrel](#supply-from-xt60barrel)
+  - [Supply from Meanwell PSU](#supply-from-meanwell-psu)
+  - [Lab PSU fixed](#lab-psu-fixed)
+  - [Lab PSU variable](#lab-psu-variable)
+  - [Oscilloscope DSO138](#oscilloscope-dso138)
+  - [Resistor decade](#resistor-decade)
+  - [Component tester](#component-tester)
+  - [Raspberry Pi](#raspberry-pi)
+  - [Display / Signal Tracer](#display--signal-tracer)
+  - [Signal generator](#signal-generator)
+  - [TS100 Soldering station](#ts100-soldering-station)
+- [Tips and tricks](#tips-and-tricks)
+- [New modules](#new-modules)
 
-## Modules in progress
-
-1. Signal Tracer (Display and audio)
-2. Function Generator
-3. Epaper + ESP8266
-4. Solder sponge / wire holder + TS100 output
-
-## The concept <a name="concept"></a>
+## The concept
 
 The system consists of 3 basic sizes of modules, 100mm, 150mm and 200mm. For the 100mm and the 150mm frame there is a backpanel bus that interconnects the modules together for power delivery. The 200mm frame uses two of the 100mm PCBs.
 
@@ -64,7 +66,7 @@ Almost none of the 3d printable pieces require supports. The frame of each modul
 
 ![IntegratedSupports](https://github.com/Chrismettal/EleLab_v2/blob/master/img/IntegratedSupports.png)
 
-## The PCBs <a name="pcbs"></a>
+## The PCBs
 
 All of the PCBs can be cheaply manufactured in China (trust me, it's easier and cheaper than you think) or sometimes i even have spares left, if you shoot me a message.
 
@@ -104,9 +106,9 @@ Here we have the basic front panel breakout with industry style screw-plug conne
 - 2pcs 0805 polyfuse 1.1A (Or your desired amperage)
 
 
-## The modules <a name="mods"></a>
+## The modules
 
-### Supply from ATX/SFX <a name="sfx"></a>
+### Supply from ATX/SFX
 
 ![SFX](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FirstDocked.jpg)
 
@@ -124,7 +126,7 @@ In the picture you see me build the SFX version of the module, the ATX version i
 - 5pcs M2x8 self tapping screws
 
 
-### Supply from XT60/Barrel <a name="infext"></a>
+### Supply from XT60/Barrel
 
 ![24vDone](https://github.com/Chrismettal/EleLab_v2/blob/master/img/24vDone.jpg)
 
@@ -145,7 +147,11 @@ One of the converters will be set to output 5 V and one to output 12 V, when you
 - 2pcs DC-DC Step down converters XL4016
 - 9pcs M2x8 self tapping screws
 
-### Lab PSU fixed <a name="suplfixed"></a>
+### Supply from Meanwell PSU
+
+Currently printing and building module.
+
+### Lab PSU fixed
 
 ![LabFixed](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabFixed_done.jpg)
 
@@ -169,7 +175,7 @@ The banana jacks are intentionally uncentered to make room for labeling on the l
 - 10pcs M2x8 self tapping screws
 
 
-### Lab PSU variable <a name="suplvariable"></a>
+### Lab PSU variable
 
 ![LabVar](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_done.jpg)
 
@@ -184,7 +190,7 @@ Similar to the fixed supply we use a Frontpanel_a PCB here. The two variable ste
 - 10pcs M2x8 self tapping screws
 
 
-### Oscilloscope DSO138 <a name="DSO138"></a>
+### Oscilloscope DSO138
 
 ![DSO138](https://github.com/Chrismettal/EleLab_v2/blob/master/img/DSO138_done.jpg)
 
@@ -200,7 +206,7 @@ You have to remove the old power jack of the DSO138 PCB and feed in power throug
 - 4pcs M3 screws and nuts
 - 6pcs M2x8 self tapping screws
 
-### Resistor decade <a name="rdec"></a>
+### Resistor decade
 
 ![Rdec](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Rdec_done.jpg)
 ![RdecCloseup](https://github.com/Chrismettal/EleLab_v2/blob/master/img/RdecCloseup.jpg)
@@ -224,7 +230,7 @@ Closing this module is tricky as well. You will need to NOT snap in the decade b
 - Bus100 PCB
 - 4pcs M2x8 self tapping screws
 
-### Component tester <a name="comptest"></a>
+### Component tester
 
 ![CompTest](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompTest_done.jpg)
 
@@ -241,49 +247,53 @@ I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
 - Bus100 PCB
 - 9pcs M2x8 self tapping screws
 
-## Tips and tricks <a name="tips"></a>
+### Raspberry Pi 
+
+Currently waiting for parts to finish module.
+
+### Display / Signal Tracer
+
+Currently waiting for parts to finish module.
+
+### Signal generator
+
+Currently printing and building module.
+
+### TS100 Soldering station
+
+Currently designing.
+
+## Tips and tricks
 
 You can keep the wires nice and short if you put together the modules as follows:
 
-### Wire up your frontpanels
+### Wire up your frontpanels  <!-- omit in toc -->
 
 ![LabVar_0](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_0.jpg)
 
 ![LabVar_1](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_1.jpg)
 
-### If your wires are long enough you can place and screw in your backpanel bus already
+### If your wires are long enough you can place and screw in your backpanel bus already <!-- omit in toc -->
 
 ![LabVar_2](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_2.jpg)
 
-### Slide on the UPPER PANEL FIRST but don't do it all the way yet.
+### Slide on the UPPER PANEL FIRST but don't do it all the way yet. <!-- omit in toc -->
 
 ![LabVar_3](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_3.jpg)
 
-### Slide in the LOWER PANEL now. You will see how this requires much less wiring you need for this.
+### Slide in the LOWER PANEL now. You will see how this requires much less wiring you need for this. <!-- omit in toc -->
 
 ![LabVar_4](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_4.jpg)
 
-### Now slide on the upper panel fully.
+### Now slide on the upper panel fully. <!-- omit in toc -->
 
 ![LabVar_5](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_5.jpg)
-
-### The upper panel can be slid on now and the module is ready to be screwed together using two M2 screws each in the upper panel and the lid.
-
-![LabVar_6](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_6.jpg)
-
-### If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame.
+<a name="tips"></a>
+### If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame. <!-- omit in toc -->
 
 ![TightScrew](https://github.com/Chrismettal/EleLab_v2/blob/master/img/TightScrew.jpg)
 
-
-## Modules in progress
-
-I am currently working on the following modules:
-
-1. Signal Tracer (Display and audio)
-2. Function Generator
-3. Raspberry Pi
-4. Solder sponge / wire holder + TS100 output
+## New modules
 
 If you have an idea for other modules, go ahead, clone this repo and try creating your new module! Also be sure to upload it to thingiverse as a remix. If you don't know how to create a module yourself, feel free to send me a message!
 
