@@ -42,7 +42,7 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [Raspberry Pi](#raspberry-pi)
   - [Display](#display)
   - [Signal generator](#signal-generator)
-  - [Audio output / Signal tracer](#audio-output--signal-tracer)
+  - [Audio amplifier / signal tracer](#audio-amplifier--signal-tracer)
   - [TS100 Soldering station](#ts100-soldering-station)
 - [Tips and tricks](#tips-and-tricks)
 - [New modules](#new-modules)
@@ -258,7 +258,14 @@ I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
 
 Currently waiting for parts to finish module.
 
-Raspberry Pi carrier with USB / Ethernet / HDMI and GPIO broken out, including HAT compatible front plate.
+Raspberry Pi carrier with USB / Ethernet / HDMI and GPIO broken out, including HAT compatible front plate. I use a "GPIO screw terminal hat" as the front plate to easily break out all GPIOs, but still be able to connect a GPIO extension cord down to a breadboard, or stack more HATs on top.
+
+**Parts:**
+
+- Raspberry Pi
+- HDMI Female - Female front panel connector
+- GPIO extension cord male-female about 150mm
+- Bus100 PCB
 
 ### Display
 
@@ -266,17 +273,40 @@ Currently waiting for parts to finish module.
 
 7 Inch HDMI Display with touchscreen. HDMI and USB broken out.
 
+**Parts:**
+
+- Waveshare 7 inch HDMI Display C
+- Bus100 PCB
+- Frontpanel_A PCB with only one USB jack mounted
+- 6pcs M2x8 self tapping screws
+- 6pcs M3x15 metric screws with nuts
+
 ### Signal generator
 
 Currently printing and building module.
 
-4-20mA / 2-10 V / PWM signal generator.
+4-20mA / 2-10 V / PWM signal generator. All contacts are broken out to banana jacks.
 
-### Audio output / Signal tracer
+**Parts:**
 
-Currently designing.
+- WSFG-06 or similar signal generator module
+- Bus100 PCB
+- 2pcs M2x8 self tapping screws
 
-Stereo speaker with amplifier.
+### Audio amplifier / signal tracer
+
+Currently printing module.
+
+Mono speaker with tiny amplifier mainly for audible signal tracing. Music won't sound good on this device so please don't expect a workshop audio system in your lab. Left and right inputs are shorted together and the right input on the PAM is pulled to GND so we only use the left input in mixed-down-mono configuration.
+
+The speaker is only glued in to accomodate all speaker sizes, so any speaker with below around 80mm diameter will work. 3-4 W is a typical power for speakers of these sizes.
+
+**Parts:**
+
+- PAM8403 amplifier module with switching pot
+- Bus100 PCB
+- Some speaker - 75mm outer dia in my case
+- Hot glue
 
 ### TS100 Soldering station
 
