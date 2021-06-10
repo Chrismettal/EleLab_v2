@@ -45,7 +45,7 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [Audio amplifier / signal tracer](#audio-amplifier--signal-tracer)
   - [TS100 Soldering station](#ts100-soldering-station)
 - [Tips and tricks](#tips-and-tricks)
-- [New modules](#new-modules)
+- [New modules12.34 €](#new-modules1234-)
 
 ## The concept
 
@@ -312,7 +312,19 @@ The speaker is only glued in to accomodate all speaker sizes, so any speaker wit
 
 Currently designing.
 
-Power output for TS100 soldering iron with sponge and wire. Possibly stand if I can manage to not burn plastic.
+Soldering "station" for TS100 soldering irons. The Iron can be kept in an ugly holder up top, powered by the XT60 plug below. The upper front plate is done with two snap-in buckets since the buckets are too deep to be sled in from the top fully. The upper bucket is meant for a soldering sponge and the lower bucket can keep your solder wire. I would either print the upper one in something heat resistant like PC or just use some aluminium tape on the inside so you don't burn the plastik with the hot tip.
+
+The XT60 plug is snapped in from the front after soldering some heavy wires to it. Afterwards you can solder the wires to the Bus100 PCB. 
+
+The skateboard bearing is just pressed in the top. If it's too loose you can also glue it in.
+
+Both buckets snap in from the front as the last item.
+
+**Parts:**
+
+- Bus100 PCB
+- 608ZZ skateboard bearing for the holder
+- XT60 female plug
 
 ## Tips and tricks
 
@@ -344,10 +356,9 @@ You can keep the wires nice and short if you put together the modules as follows
 
 ![TightScrew](https://github.com/Chrismettal/EleLab_v2/blob/master/img/TightScrew.jpg)
 
-## New modules
-
-If you have an idea for other modules, go ahead, clone this repo and try creating your new module! Also be sure to upload it to thingiverse as a remix. If you don't know how to create a module yourself, feel free to send me a message!
-
-If you like my work please consider supporting my caffeine addiction!
-
-<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+## New modules12.34 €
+12.63 €
+17.92 €
+13.58 €
+14.35 €
+12.63 €
