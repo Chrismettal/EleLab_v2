@@ -45,7 +45,6 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [Audio amplifier / signal tracer](#audio-amplifier--signal-tracer)
   - [TS100 Soldering station](#ts100-soldering-station)
 - [Tips and tricks](#tips-and-tricks)
-- [New modules12.34 €](#new-modules1234-)
 
 ## The concept
 
@@ -355,10 +354,3 @@ You can keep the wires nice and short if you put together the modules as follows
 ### If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame. <!-- omit in toc -->
 
 ![TightScrew](https://github.com/Chrismettal/EleLab_v2/blob/master/img/TightScrew.jpg)
-
-## New modules12.34 €
-12.63 €
-17.92 €
-13.58 €
-14.35 €
-12.63 €
