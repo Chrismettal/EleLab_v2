@@ -208,7 +208,7 @@ You have to remove the old power jack of the DSO138 PCB and feed in power throug
 **Parts:**
 
 - DSO138 kit
-- 13mmx19mm rocker switch
+- 12mmx19mm rocker switch
 - Bus150 PCB
 - 4pcs M3 screws and nuts
 - 6pcs M2x8 self tapping screws
@@ -277,7 +277,7 @@ You will also need an angled mini-HDMI to HDMI cable. Make sure it is angled the
 - HDMI Female - Female front panel connector
 - GPIO extension cord male-female about 150mm
 - Bus100 PCB
-- 19x12mm wide rocker switch
+- 12mmx19mm rocker switch
 - angled short mini-HDMI to HDMI cable
 - optionally - GPIO breakout board of your choice
 
@@ -311,6 +311,7 @@ This modules works great in conjunction with the RPi module!
 - Waveshare 7 inch HDMI Display C
 - 2 x Bus100 PCB
 - Frontpanel_A PCB with only one USB jack mounted
+- 12mmx19mm rocker switch
 - 8pcs M2x8 self tapping screws
 - 6pcs M3x15 metric screws with nuts
 - female-female HDMI front panel connector
