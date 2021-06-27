@@ -1,6 +1,6 @@
 # Elelab_v2 <!-- omit in toc -->
 
-![WholeSystem](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompleteNice.jpg)
+![WholeSystem](img/CompleteNice.jpg)
 
 This is a low cost, modular elctronics lab system for hobbyists.
 The customizable modules include fixed and variable power supplies, measurement tools, component testers and much more.
@@ -41,6 +41,7 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [Component tester](#component-tester)
   - [Raspberry Pi](#raspberry-pi)
   - [Display](#display)
+  - [Electronic Load](#electronic-load)
   - [Signal generator](#signal-generator)
   - [Audio amplifier / signal tracer](#audio-amplifier--signal-tracer)
   - [TS100 Soldering station](#ts100-soldering-station)
@@ -50,8 +51,8 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
 
 The system consists of 3 basic sizes of modules, 100mm, 150mm and 200mm. For the 100mm and the 150mm frame there is a backpanel bus that interconnects the modules together for power delivery. The 200mm frame uses two of the 100mm PCBs.
 
-![Interconnects](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Inter.jpg)
-![FrameWithPCB](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FrameWithPCB.jpg)
+![Interconnects](img/Inter.jpg)
+![FrameWithPCB](img/FrameWithPCB.jpg)
 
 
 For the modules we usually use one of the 3 base sizes and punch holes in the upper and/or lower front panel to suit our mounting needs. This can be done in FreeCAD by modifying the BaseXXX file or a finished module that best fits your new module. Alternatively you can also just edit the .stl files in the editor of your choice.
@@ -62,15 +63,15 @@ Obviously you can just run wires between the modules and omit the backpanel bus,
 
 If you are using the bus, individual modules just plug into each other to form a single unit. 
 
-![FirstDocked2](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FirstDocked2.jpg)
+![FirstDocked2](img/FirstDocked2.jpg)
 
 With 2 little printed clips you can secure the modules together so they don't seperate during the occasional earthquake or lab-ragequit.
 
-![Clip](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Clip.jpg)
+![Clip](img/Clip.jpg)
 
 Almost none of the 3d printable pieces require supports. The frame of each module has integrated supports at one position, that you will need to cut away after printing:
 
-![IntegratedSupports](https://github.com/Chrismettal/EleLab_v2/blob/master/img/IntegratedSupports.png)
+![IntegratedSupports](img/IntegratedSupports.png)
 
 ## The PCBs
 
@@ -78,7 +79,7 @@ All of the PCBs can be cheaply manufactured in China (trust me, it's easier and 
 
 ### Bus100 / Bus150
 
-![Bus100](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Bus100.png)
+![Bus100](img/Bus100.png)
 
 This is the basic backpanel bus to link individual modules together. Though optional, it greatly enhances your experience in building this system.
 
@@ -89,7 +90,7 @@ This is the basic backpanel bus to link individual modules together. Though opti
 
 ### PowerFeed
 
-![PowerFeed](https://github.com/Chrismettal/EleLab_v2/blob/master/img/PowerFeed.png)
+![PowerFeed](img/PowerFeed.png)
 
 This is the main infeed to connect your power supply to the backpanel bus and feed into the modules. It packs jacks to plug in your SFX supply, screw connectors for external fuses, and a breakout for the SFXs standby switch. Alternatively you could wire up your supplies directly to the spots marked as 24V, 12V and 5V respectively without using ATX connectors.
 
@@ -101,7 +102,7 @@ This is the main infeed to connect your power supply to the backpanel bus and fe
 
 ### Frontpanel_a
 
-![Frontpanel_a](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Frontpanel_a_1.jpg)
+![Frontpanel_a](img/Frontpanel_a_1.jpg)
 
 Here we have the basic front panel breakout with industry style screw-plug connectors and USB jacks. The USB Jacks have a 0805 footprint in line with the 5 V rail so you can optionally install a tiny polyfuse in there. The data lines of each USB port are broken out so you can either use it for normal data transfer, or do whatever the best quick charge port configuration on the data lines is today. (for example bridging D+ and D- to put old Android phones into quick charge mode)
 
@@ -116,7 +117,7 @@ Here we have the basic front panel breakout with industry style screw-plug conne
 
 ### Supply from ATX/SFX
 
-![SFX](https://github.com/Chrismettal/EleLab_v2/blob/master/img/FirstDocked.jpg)
+![SFX](img/FirstDocked.jpg)
 
 The easiest way to supply power to your EleLab is to use a regular ATX or SFX computer power supply. Using the PowerFeed PCB you can plug in the 24pin and 8pin connectors of your PSU directly into the backpanel bus. The module is preconfigured to use fuses for the 12 V and 5 V rails. You could install a switch for the PowerON PSU signal but i usually just bridge it completely so i switch the EleLab on and off by the main power switch on the back of the PSU.
 
@@ -134,13 +135,13 @@ In the picture you see me build the SFX version of the module, the ATX version i
 
 ### Supply from XT60/Barrel
 
-![24vDone](https://github.com/Chrismettal/EleLab_v2/blob/master/img/24vDone.jpg)
+![24vDone](img/24vDone.jpg)
 
 With this supply module you can use any external 12 V or 24 V Power supply you want. You could even plug in some batteries with the XT60 jack!
 This module however needs some beefy DC-DC step-down converters to create the 5 V rail, as well as the 12 V rail if you are using a 24 V supply. 
 There is a printable tray that just snaps into the bottom, capable of carrying two of these types of step down converters:
 
-![24vDC](https://github.com/Chrismettal/EleLab_v2/blob/master/img/24vDC.jpg)
+![24vDC](img/24vDC.jpg)
 
 These are readily available from china for a few bucks if you search for "step-down XL4016" on ebay. XL4016 is the name of the IC but it's the closest to a part number we get.
 
@@ -159,17 +160,17 @@ Currently printing and building module.
 
 ### Lab PSU fixed
 
-![LabFixed](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabFixed_done.jpg)
+![LabFixed](img/LabFixed_done.jpg)
 
 The first actually usable module is a power breakout for your 5 V, 12 V and optionally 24 V rails. Using cheap chinese banana jacks with 12mm OD all rails can be accessed. In the front we use the Frontpanel_a PCB to have connections beside the banana jacks. Which terminal you connect to which rail is only dependend on your preferences. Obviously make sure to not reverse polarity on the USB ports or risk frying something. 
 
 Here you can see the spagetthi wiring behind mine:
 
-![LabFixedWiring](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabFixedWiring.jpg)
+![LabFixedWiring](img/LabFixedWiring.jpg)
 
 Be sure to bend over your connectors as seen here as there is not extremely much room for the upper front panel to slide down:
 
-![LabFixedSlide](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabFixedSlide.jpg)
+![LabFixedSlide](img/LabFixedSlide.jpg)
 
 The banana jacks are intentionally uncentered to make room for labeling on the left. I did not have time to create printable labels yet but i will get to it.
 
@@ -183,7 +184,7 @@ The banana jacks are intentionally uncentered to make room for labeling on the l
 
 ### Lab PSU variable
 
-![LabVar](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_done.jpg)
+![LabVar](img/LabVar_done.jpg)
 
 Similar to the fixed supply we use a Frontpanel_a PCB here. The two variable step down converters (ebay is your friend again, TBDnameOfStepDown) are fed by either the 24 V or 12 V rail, depending on your infeed capabilities. Under each converter i put two banana jacks as the output, but also in parallel i wire up the industrial screw-plug connectors in the front to be outputs as well. If you are feeling adventurous you can also but the USBs behind the converters, but be vary that you can potentially but up to 24 V through the USB port then if you tell the converter to do it. The USB Jack will not be a happy charging port but rather something for debugging.
 
@@ -198,7 +199,7 @@ Similar to the fixed supply we use a Frontpanel_a PCB here. The two variable ste
 
 ### Oscilloscope DSO138
 
-![DSO138](https://github.com/Chrismettal/EleLab_v2/blob/master/img/DSO138_done.jpg)
+![DSO138](img/DSO138_done.jpg)
 
 The DSO138 is a great "Babies first oscilloscope". This super cheap thing is awesome if you don't wanna shell out serious cash if you are going to look at simple waveforms once per year and don't really care about accuracy a lot. Oftentimes i just wanna know IF something is even executing code and don't care HOW it is doing it so i often still fire up the DSO138.
 
@@ -214,18 +215,18 @@ You have to remove the old power jack of the DSO138 PCB and feed in power throug
 
 ### Resistor decade
 
-![Rdec](https://github.com/Chrismettal/EleLab_v2/blob/master/img/Rdec_done.jpg)
-![RdecCloseup](https://github.com/Chrismettal/EleLab_v2/blob/master/img/RdecCloseup.jpg)
+![Rdec](img/Rdec_done.jpg)
+![RdecCloseup](img/RdecCloseup.jpg)
 
 Not really needing a backpanel this can safely be placed as the last piece of the EleLab as it does not even require power. Please follow your favorite guide on how to wire up your decade.
 
 The 2 ends of the resistor decade are wired to two banana jacks. Also i installed 2 potentiometers into the panel, giving me some more flexibility. These are also just wired straight into 3 banana connectors.
 
-![RdecWiring](https://github.com/Chrismettal/EleLab_v2/blob/master/img/RdecWiring.jpg)
+![RdecWiring](img/RdecWiring.jpg)
 
 Closing this module is tricky as well. You will need to NOT snap in the decade before sliding the front panel down:
 
-![RdecSLide](https://github.com/Chrismettal/EleLab_v2/blob/master/img/RdecSlide.jpg)
+![RdecSLide](img/RdecSlide.jpg)
 
 **Parts:**
 
@@ -238,11 +239,11 @@ Closing this module is tricky as well. You will need to NOT snap in the decade b
 
 ### Component tester
 
-![CompTest](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompTest_done.jpg)
+![CompTest](img/CompTest_done.jpg)
 
 You would not believe how much utility you will get out of these things. They are also very cheaply ordered from ebay, screw into the upper panel from the backside and can identify almost all of the components you throw at it. Usually these are fed by a 9 V battery and while you could till do that and have a battery lying inside the module i just feed it from the 12 V rail. Don't know about any longterm damages though.
 
-![CompTestWiring](https://github.com/Chrismettal/EleLab_v2/blob/master/img/CompTest_wiring.jpg)
+![CompTestWiring](img/CompTest_wiring.jpg)
 
 I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
 
@@ -255,9 +256,20 @@ I wired 3 banana jacks right to the easiest to reach points numbered 1, 2 and 3.
 
 ### Raspberry Pi 
 
-Currently waiting for parts to finish module.
+![RPi](img/RPi_Nice.jpg)
 
 Raspberry Pi carrier with USB / Ethernet / HDMI and GPIO broken out, including HAT compatible front plate. I use a "GPIO screw terminal hat" as the front plate to easily break out all GPIOs, but still be able to connect a GPIO extension cord down to a breadboard, or stack more HATs on top.
+
+![RPiPower](img/RPi_Power.jpg)
+
+The Pi is powered through the bottom side of the GPIO header since the top side is taken by the GPIO extension cord. 5 V from the back panel is directly applied through a rocker switch.
+
+![RPiWiring](img/RPi_GPIO.jpg)
+
+Make sure to plug in the GPIO extension as shown. This is basically the only way it will be long enough and also the only way where the new header in the upper panel will be right side up and not mirrored.
+I recommend mounting a breakout / extension HAT as shown to have easy screw terminal access to all GPIO pins, but still be able to plug HATs on top of it. Mounting the HAT now, screwing in PCB standoffs and THEN hot-snotting the extension cord in place from the back makes mounting much easier.
+
+You will also need an angled mini-HDMI to HDMI cable. Make sure it is angled the correct way since it won't fit otherwise.
 
 **Parts:**
 
@@ -265,59 +277,112 @@ Raspberry Pi carrier with USB / Ethernet / HDMI and GPIO broken out, including H
 - HDMI Female - Female front panel connector
 - GPIO extension cord male-female about 150mm
 - Bus100 PCB
+- 19x12mm wide rocker switch
+- angled short mini-HDMI to HDMI cable
+- optionally - GPIO breakout board of your choice
 
 ### Display
 
-Currently waiting for parts to finish module.
+![DisplayNice](img/Display_Nice.jpg)
 
 7 Inch HDMI Display with touchscreen. HDMI and USB broken out.
+
+**WARNING:** currently, to use the same frontpanel, a USB-A plug is used for the touchscreen. Usually you would use a Micro USB, USB C, or USB-B header for this breakout. To actually use the touchscreen for now you would have to use an USB-A to A cable, until someone made a frontpanel for USB-C or Micro USB (might be me idk).
+If you are using the Frontpanel_A be sure to NOT populate the fuse, so you disconnect the 5 V rails of both USB devices.
+
+![DisplayWiring](img/Display_Wiring.jpg)
+
+![DisplayCables](img/Display_Cables.jpg)
+
+You will need a short angled HDMI cable and an angled USB-Micro cable like shown, as straight cables won't fit in the frame. The HDMI cable connects directly to a female-female HDMI front panel mount, while the USB cable is cut open and soldered to the Frontpanel_A.
+
+![DisplayUSB](img/Display_USB.jpg)
+
+![DisplayPower](img/Display_Power.jpg)
+
+The display is powered with 5 V through a rocker switch, soldered directly to the shown points on the board. I used the GND of one of the Micro USB plugs, and 5 V is applied to the middle of the display switch. You could also cut open a second USB cable and use that, but I did not want to waste these precious angled cables
+
+![RPiDisplay](img/RPi_Display.jpg)
+
+This modules works great in conjunction with the RPi module!
 
 **Parts:**
 
 - Waveshare 7 inch HDMI Display C
-- Bus100 PCB
+- 2 x Bus100 PCB
 - Frontpanel_A PCB with only one USB jack mounted
-- 6pcs M2x8 self tapping screws
+- 8pcs M2x8 self tapping screws
 - 6pcs M3x15 metric screws with nuts
+- female-female HDMI front panel connector
+- angled HDMI cable
+- angled micro USB cable
+
+### Electronic Load
+
+![ElectronicLoadNice](img/ElectronicLoad_Nice.jpg)
+
+30 W electronic load module, don't know everything it can do yet, but you'll figure it out.
+This module actually uses the fan opening in the back of the frame since it does generate some heat (duh).
+It does have 4 wire measurement but I chose to omit this here to avoid confusion. For loads this small and modules with this low accuracy I did not see the benefit. The 4 wire measurement is therefore connected on the inside to the 2 terminals directly:
+
+![ElectronicLoadWiring](img/ElectronicLoad_Wiring.jpg)
+
+**Parts:**
+
+- WEL3005 or similar electronic load module
+- Bus100 PCB
+- Frontpanel_A PCB
+- 8pcs M2x8 self tapping screws
 
 ### Signal generator
 
-Currently printing and building module.
+![SignalGeneratorNice](img/SignalGenerator_Nice.jpg)
 
-4-20mA / 2-10 V / PWM signal generator. All contacts are broken out to banana jacks.
+4-20mA / 2-10 V / PWM signal generator. All contacts are broken out to banana jacks as well as the front panel in the order of your choice.
 
 **Parts:**
 
 - WSFG-06 or similar signal generator module
 - Bus100 PCB
-- 2pcs M2x8 self tapping screws
+- Frontpanel_A PCB
+- 8pcs M2x8 self tapping screws
 
 ### Audio amplifier / signal tracer
 
-Currently printing module.
+![PAMNice](img/PAM_Nice.jpg)
 
 Mono speaker with tiny amplifier mainly for audible signal tracing. Music won't sound good on this device so please don't expect a workshop audio system in your lab. Left and right inputs are shorted together and the right input on the PAM is pulled to GND so we only use the left input in mixed-down-mono configuration.
 
 The speaker is only glued in to accomodate all speaker sizes, so any speaker with below around 80mm diameter will work. 3-4 W is a typical power for speakers of these sizes.
+
+![PAMResistors](img/PAM_Resistors.jpg)
+
+Since this device is only mono, you should connect both channels together to one PAM input. For this, use two resistors (anything between 3k3 and 10k is probably fine) as shown here.
+
+![PAMWiring](img/PAM_Wiring.jpg)
+
+I put the output of both resistors to both channels so it does not matter which channel I use for the speaker output. I also put some heatshrink over the two resistors for some mechanical stability.
 
 **Parts:**
 
 - PAM8403 amplifier module with switching pot
 - Bus100 PCB
 - Some speaker - 75mm outer dia in my case
-- Hot glue
+- 1/4 (6.35mm) Inch stereo jack
 
 ### TS100 Soldering station
 
-Currently designing.
+![TS100Nice](img/TS100_Nice.jpg)
 
-Soldering "station" for TS100 soldering irons. The Iron can be kept in an ugly holder up top, powered by the XT60 plug below. The upper front plate is done with two snap-in buckets since the buckets are too deep to be sled in from the top fully. The upper bucket is meant for a soldering sponge and the lower bucket can keep your solder wire. I would either print the upper one in something heat resistant like PC or just use some aluminium tape on the inside so you don't burn the plastik with the hot tip.
+Soldering "station" for TS100 soldering irons. The Iron can be kept in an ugly holder up top, powered by the XT60 plug below. The upper front plate is done with two snap-in buckets since the buckets are too deep to be sled in from the top fully. The upper bucket is meant for a soldering sponge and the lower bucket can keep your solder wire. I would either print the upper one in something heat resistant like PC or just use some aluminium tape on the inside so you don't burn the plastic with the hot tip.
 
-The XT60 plug is snapped in from the front after soldering some heavy wires to it. Afterwards you can solder the wires to the Bus100 PCB. 
+The XT60 plug is snapped in from the front after soldering some heavy wires to it. Afterwards you can solder the wires to the Bus100 PCB (24V). 
 
 The skateboard bearing is just pressed in the top. If it's too loose you can also glue it in.
 
 Both buckets snap in from the front as the last item.
+
+Make sure to use this module "more to the left" of your EleLab, since it draws quite a lot of power, which you probably don't want to travel through 20 modules.
 
 **Parts:**
 
@@ -331,26 +396,26 @@ You can keep the wires nice and short if you put together the modules as follows
 
 ### Wire up your frontpanels  <!-- omit in toc -->
 
-![LabVar_0](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_0.jpg)
+![LabVar_0](img/LabVar_0.jpg)
 
-![LabVar_1](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_1.jpg)
+![LabVar_1](img/LabVar_1.jpg)
 
 ### If your wires are long enough you can place and screw in your backpanel bus already <!-- omit in toc -->
 
-![LabVar_2](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_2.jpg)
+![LabVar_2](img/LabVar_2.jpg)
 
 ### Slide on the UPPER PANEL FIRST but don't do it all the way yet. <!-- omit in toc -->
 
-![LabVar_3](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_3.jpg)
+![LabVar_3](img/LabVar_3.jpg)
 
 ### Slide in the LOWER PANEL now. You will see how this requires much less wiring you need for this. <!-- omit in toc -->
 
-![LabVar_4](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_4.jpg)
+![LabVar_4](img/LabVar_4.jpg)
 
 ### Now slide on the upper panel fully. <!-- omit in toc -->
 
-![LabVar_5](https://github.com/Chrismettal/EleLab_v2/blob/master/img/LabVar_5.jpg)
+![LabVar_5](img/LabVar_5.jpg)
 <a name="tips"></a>
 ### If you have really short cables running from your front panels to your backpanel bus you can also slide in the frontpanel first and only then screw the backpanel bus into the frame. <!-- omit in toc -->
 
-![TightScrew](https://github.com/Chrismettal/EleLab_v2/blob/master/img/TightScrew.jpg)
+![TightScrew](img/TightScrew.jpg)
