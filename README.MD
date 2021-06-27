@@ -334,6 +334,7 @@ It does have 4 wire measurement but I chose to omit this here to avoid confusion
 - Bus100 PCB
 - Frontpanel_A PCB
 - 8pcs M2x8 self tapping screws
+- 30mm fan
 
 ### Signal generator
 
