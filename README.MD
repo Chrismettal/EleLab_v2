@@ -162,7 +162,23 @@ One of the converters will be set to output 5 V and one to output 12 V, when you
 
 ### Supply from Meanwell PSU
 
-Currently printing and building module.
+![MWNice](img/MW_Nice.jpg)
+
+Using the same step down converters, but this time using an internal PSU, the Meanwell module directly integrates a high quality supply into your EleLab. 
+Since you will need to wire up mains voltage i can NOT show you how to do this. 
+The Module uses an IEC C14 plug with integrated switch and fuse. Can't really find an exact name to google for.
+
+The Meanwell supply should be a 24 V one, using the step down converters to step the voltage to 12 V and 5 V respectively.
+
+**Parts:**
+
+- PowerFeed PCB
+- 3pcs screw in fuse holder panel mount
+- 2pcs DC-DC Step down converters XL4016
+- 9pcs M2x8 self tapping screws
+- 4pcs M3x5 metric screws
+- Meanwell RS-150-24
+- IEC C14 Plug with switch and fuse
 
 ### Lab PSU fixed
 
