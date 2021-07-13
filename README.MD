@@ -5,7 +5,7 @@
 This is a low cost, modular elctronics lab system for hobbyists.
 The customizable modules include fixed and variable power supplies, measurement tools, component testers and much more.
 Everything in here is done with open source software, including FreeCAD for all the 3d printable files and KiCAD for the PCBs.
-I have made a set of modules already and am in the process of creating many more. Raw PCB project files, Gerbers and FreeCAD projects are all uploaded here for your customizing needs, while the finished modules are uploaded to Thingiverse. Please be sure to upload any remix you do as it might be useful for others and especially myself!
+I have made a set of modules already and am in the process of creating many more. Raw PCB project files, Gerbers and FreeCAD projects are all uploaded here for your customizing needs, while the finished modules are uploaded to Prusaprinters. Please be sure to upload any remix you do as it might be useful for others and especially myself!
 
 ![AllModules](img/AllModules.jpg)
 
