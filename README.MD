@@ -13,7 +13,7 @@ The system features a set of backpanel bus PCBs as well as panel breakout PCBs. 
 
 ![NiceShot](img/NiceShot.jpg)
 
-Finished modules for printing yourself for any module can be found [here in my Thingiverse collection](https://www.thingiverse.com/Chrismettal/collections/elelab_v2).
+Finished modules for printing yourself for any module can be found [here in the Prusaprinters collection](https://www.prusaprinters.org/social/13425-chrismettal/collections/14323).
 For most of the modules a printbed of 160x160mm and 175mm of height is sufficient, but the ATX and SFX module require print bed sizes of up to 250mm width (Prusa MK2 and up dimensions). I printed all of the modules in PLA and just to speed things up i used a 0.6mm nozzle but that is not required at all.
 
 ![Showcase](img/Showcase.gif)
