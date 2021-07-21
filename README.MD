@@ -37,6 +37,7 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [PowerFeed](#powerfeed)
   - [Frontpanel_a](#frontpanel_a)
 - [The modules](#the-modules)
+  - [Supplies](#supplies)
   - [Supply from ATX/SFX](#supply-from-atxsfx)
   - [Supply from XT60/Barrel](#supply-from-xt60barrel)
   - [Supply from Meanwell PSU](#supply-from-meanwell-psu)
@@ -100,6 +101,8 @@ This is the basic backpanel bus to link individual modules together. Though opti
 
 This is the main infeed to connect your power supply to the backpanel bus and feed into the modules. It packs jacks to plug in your SFX supply, screw connectors for external fuses, and a breakout for the SFXs standby switch. Alternatively you could wire up your supplies directly to the spots marked as 24V, 12V and 5V respectively without using ATX connectors.
 
+Using a PC supply, 12 V are supplied through either a 4 or 8 pin CPU header power plug. You cannot use the 8-pin GPU plug on your high end ATX PSU.
+
 **Parts:**
 
 - 24 Pin 4.2mm ATX Connector standing 
@@ -118,8 +121,11 @@ Here we have the basic front panel breakout with industry style screw-plug conne
 - 2pcs standing vertical USB Ports
 - 2pcs 0805 polyfuse 1.1A (Or your desired amperage)
 
-
 ## The modules
+
+### Supplies
+
+No matter what Infeed you use, you should aim for around 100 - 150 W of power in general. I use a 24 V,  150 W power supply to infeed into my system. For PC supplies you should watch for the individual rail current, as a PSU might show 5 A of 12 V, but split over 5 rails, so if you only use one rail you will only get 1 A out of your PSU.
 
 ### Supply from ATX/SFX
 
@@ -151,7 +157,7 @@ There is a printable tray that just snaps into the bottom, capable of carrying t
 
 These are readily available from china for a few bucks if you search for "step-down XL4016" on ebay. XL4016 is the name of the IC but it's the closest to a part number we get.
 
-One of the converters will be set to output 5 V and one to output 12 V, when you supply the module with 24 V DC. This will give you all 3 voltages on the backpanel bus.
+One of the converters will be set to output 5 V and one to output 12 V, when you supply the module with 24 V DC. This will give you all 3 voltages on the backpanel bus. The modules can also be configured for current limiting, which I set to 2 A each.
 
 **Parts:**
 
@@ -168,7 +174,7 @@ Using the same step down converters, but this time using an internal PSU, the Me
 Since you will need to wire up mains voltage i can NOT show you how to do this. 
 The Module uses an IEC C14 plug with integrated switch and fuse. Can't really find an exact name to google for.
 
-The Meanwell supply should be a 24 V one, using the step down converters to step the voltage to 12 V and 5 V respectively.
+The Meanwell supply should be a 24 V one, preferably the 150 W model, using the step down converters to step the voltage to 12 V and 5 V respectively.
 
 **Parts:**
 
