@@ -2,32 +2,6 @@
 
 ![WholeSystem](img/CompleteNice.jpg)
 
-This is a low cost, modular elctronics lab system for hobbyists.
-The customizable modules include fixed and variable power supplies, measurement tools, component testers and much more.
-Everything in here is done with open source software, including FreeCAD for all the 3d printable files and KiCAD for the PCBs.
-I have made a set of modules already and am in the process of creating many more. Raw PCB project files, Gerbers and FreeCAD projects are all uploaded here for your customizing needs, while the finished modules are uploaded to Prusaprinters. Please be sure to upload any remix you do as it might be useful for others and especially myself!
-
-![AllModules](img/AllModules.jpg)
-
-The system features a set of backpanel bus PCBs as well as panel breakout PCBs. While the backpanel bus is not neccesary, it keeps the system modular, hot swappable and tidy. You can have the gerbers manufactured for cheap at your favorite chinese PCB house or just shoot me a message. I might have spares.
-
-![NiceShot](img/NiceShot.jpg)
-
-Finished modules for printing yourself for any module can be found [here in the Prusaprinters collection](https://www.prusaprinters.org/social/13425-chrismettal/collections/14323).
-For most of the modules a printbed of 160x160mm and 175mm of height is sufficient, but the ATX and SFX module require print bed sizes of up to 250mm width (Prusa MK2 and up dimensions). I printed all of the modules in PLA and just to speed things up i used a 0.6mm nozzle but that is not required at all.
-
-![Showcase](img/Showcase.gif)
-
-If you like my work please consider supporting my caffeine addiction!
-
-<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
-
-## Buying
-
-All PCBs as well as 3D printed parts are now stocked at Tindie!
-
-<a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
-
 ## Table of contents <!-- omit in toc -->
 
 - [Buying](#buying)
@@ -54,6 +28,32 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [Audio amplifier / signal tracer](#audio-amplifier--signal-tracer)
   - [TS100 Soldering station](#ts100-soldering-station)
 - [Tips and tricks](#tips-and-tricks)
+
+This is a low cost, modular elctronics lab system for hobbyists.
+The customizable modules include fixed and variable power supplies, measurement tools, component testers and much more.
+Everything in here is done with open source software, including FreeCAD for all the 3d printable files and KiCAD for the PCBs.
+I have made a set of modules already and am in the process of creating many more. Raw PCB project files, Gerbers and FreeCAD projects are all uploaded here for your customizing needs, while the finished modules are uploaded to Prusaprinters. Please be sure to upload any remix you do as it might be useful for others and especially myself!
+
+![AllModules](img/AllModules.jpg)
+
+The system features a set of backpanel bus PCBs as well as panel breakout PCBs. While the backpanel bus is not neccesary, it keeps the system modular, hot swappable and tidy. You can have the gerbers manufactured for cheap at your favorite chinese PCB house or just shoot me a message. I might have spares.
+
+![NiceShot](img/NiceShot.jpg)
+
+Finished modules for printing yourself for any module can be found [here in the Prusaprinters collection](https://www.prusaprinters.org/social/13425-chrismettal/collections/14323).
+For most of the modules a printbed of 160x160mm and 175mm of height is sufficient, but the ATX and SFX module require print bed sizes of up to 250mm width (Prusa MK2 and up dimensions). I printed all of the modules in PLA and just to speed things up i used a 0.6mm nozzle but that is not required at all.
+
+![Showcase](img/Showcase.gif)
+
+If you like my work please consider supporting my caffeine addiction!
+
+<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+
+## Buying
+
+All PCBs as well as 3D printed parts are now stocked at Tindie!
+
+<a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
 ## The concept
 
