@@ -4,3 +4,6 @@
 *.FCBak
 *.FCStd*
 !*.FCStd
+
+# KiCAD backup files
+*-backups

@@ -45,6 +45,7 @@ All PCBs as well as 3D printed parts are now stocked at Tindie!
   - [Lab PSU variable](#lab-psu-variable)
   - [Oscilloscope DSO138](#oscilloscope-dso138)
   - [Resistor decade](#resistor-decade)
+    - [Performance](#performance)
   - [Component tester](#component-tester)
   - [Raspberry Pi](#raspberry-pi)
   - [Display](#display)
@@ -244,6 +245,7 @@ You have to remove the old power jack of the DSO138 PCB and feed in power throug
 ### Resistor decade
 
 ![Rdec](img/Rdec_done.jpg)
+
 ![RdecCloseup](img/RdecCloseup.jpg)
 
 Not really needing a backpanel this can safely be placed as the last piece of the EleLab as it does not even require power. Please follow your favorite guide on how to wire up your decade.
@@ -255,6 +257,87 @@ The 2 ends of the resistor decade are wired to two banana jacks. Also i installe
 Closing this module is tricky as well. You will need to NOT snap in the decade before sliding the front panel down:
 
 ![RdecSLide](img/RdecSlide.jpg)
+
+A [schematic on how to wire the KSA-2 switches](PCB_CAD/EleLab_v2_RDecSchematic/RDecSchematic/RDecSchematic.pdf) is provided in [PDF](PCB_CAD/EleLab_v2_RDecSchematic/RDecSchematic/RDecSchematic.pdf) form, as well as a [KiCAD project](PCB_CAD/EleLab_v2_RDecSchematic/../../PCB_CAD/EleLab_v2_RDecSchematic/RDecSchematic/RDecSchematic.kicad_pro).
+
+#### Performance
+
+The high number of switch contacts will  cause a significant resistance error in the low range of `0-100R`, but for values above `100R` the accuracy raises greatly. The bad performance of the lower values skews the full range average / median, so seperate values for different ranges are provided.
+
+| Range      | Average Error % | Median Error % |
+| ---------- | --------------- | -------------- |
+| 1R - 100R  | 16.697          | 9.890          |
+| 100R - 10M | -0.265          | -0.395         |
+| Full range | 16.697          | 9.890          |
+
+These raw values have been recorded with a Keysight 34461A using 4-Wire resistance measurement:
+
+| Target [R]  | Actual [R]  | Error [R]  | Error [%] |
+| ----------- | ----------- | ---------- | --------- |
+| 1.000       | 2.044       | 1.044      | 104.400   |
+| 2.000       | 3.016       | 1.016      | 50.800    |
+| 3.000       | 4.036       | 1.036      | 34.533    |
+| 4.000       | 4.992       | 0.992      | 24.800    |
+| 5.000       | 5.985       | 0.985      | 19.700    |
+| 6.000       | 6.986       | 0.986      | 16.433    |
+| 7.000       | 7.990       | 0.990      | 14.143    |
+| 8.000       | 9.024       | 1.024      | 12.800    |
+| 9.000       | 10.063      | 1.063      | 11.811    |
+| 10.000      | 10.989      | 0.989      | 9.890     |
+| 20.000      | 20.995      | 0.995      | 4.975     |
+| 30.000      | 30.974      | 0.974      | 3.247     |
+| 40.000      | 40.937      | 0.937      | 2.342     |
+| 50.000      | 50.910      | 0.910      | 1.820     |
+| 60.000      | 60.910      | 0.910      | 1.517     |
+| 70.000      | 70.869      | 0.869      | 1.241     |
+| 80.000      | 80.774      | 0.774      | 0.968     |
+| 90.000      | 90.730      | 0.730      | 0.811     |
+| 100.000     | 101.004     | 1.004      | 1.004     |
+| 200.000     | 200.762     | 0.762      | 0.381     |
+| 300.000     | 300.620     | 0.620      | 0.207     |
+| 400.000     | 400.670     | 0.670      | 0.168     |
+| 500.000     | 500.468     | 0.468      | 0.094     |
+| 600.000     | 600.120     | 0.120      | 0.020     |
+| 700.000     | 699.932     | -0.068     | -0.010    |
+| 800.000     | 799.801     | -0.199     | -0.025    |
+| 900.000     | 899.823     | -0.177     | -0.020    |
+| 1000.000    | 999.342     | -0.658     | -0.066    |
+| 2000.000    | 2000.430    | 0.430      | 0.022     |
+| 3000.000    | 2998.200    | -1.800     | -0.060    |
+| 4000.000    | 3999.820    | -0.180     | -0.004    |
+| 5000.000    | 4998.400    | -1.600     | -0.032    |
+| 6000.000    | 5998.460    | -1.540     | -0.026    |
+| 7000.000    | 6996.200    | -3.800     | -0.054    |
+| 8000.000    | 7993.540    | -6.460     | -0.081    |
+| 9000.000    | 8991.460    | -8.540     | -0.095    |
+| 10000.000   | 9957.250    | -42.750    | -0.428    |
+| 20000.000   | 19904.500   | -95.500    | -0.478    |
+| 30000.000   | 29845.600   | -154.400   | -0.515    |
+| 40000.000   | 39806.000   | -194.000   | -0.485    |
+| 50000.000   | 49754.000   | -246.000   | -0.492    |
+| 60000.000   | 59723.000   | -277.000   | -0.462    |
+| 70000.000   | 69684.700   | -315.300   | -0.450    |
+| 80000.000   | 79651.800   | -348.200   | -0.435    |
+| 90000.000   | 89589.100   | -410.900   | -0.457    |
+| 100000.000  | 99555.100   | -444.900   | -0.445    |
+| 200000.000  | 199155.000  | -845.000   | -0.423    |
+| 300000.000  | 298855.000  | -1145.000  | -0.382    |
+| 400000.000  | 398422.000  | -1578.000  | -0.395    |
+| 500000.000  | 498035.000  | -1965.000  | -0.393    |
+| 600000.000  | 597631.000  | -2369.000  | -0.395    |
+| 700000.000  | 697278.000  | -2722.000  | -0.389    |
+| 800000.000  | 796824.000  | -3176.000  | -0.397    |
+| 900000.000  | 896647.000  | -3353.000  | -0.373    |
+| 1000000.000 | 993580.000  | -6420.000  | -0.642    |
+| 2000000.000 | 1987110.000 | -12890.000 | -0.645    |
+| 3000000.000 | 2979190.000 | -20810.000 | -0.694    |
+| 4000000.000 | 3974220.000 | -25780.000 | -0.645    |
+| 5000000.000 | 4970280.000 | -29720.000 | -0.594    |
+| 6000000.000 | 5965340.000 | -34660.000 | -0.578    |
+| 7000000.000 | 6958820.000 | -41180.000 | -0.588    |
+| 8000000.000 | 7953500.000 | -46500.000 | -0.581    |
+| 9000000.000 | 8948330.000 | -51670.000 | -0.574    |
+| 9999999.000 | 9944400.000 | -55599.000 | -0.556    |
 
 **Parts:**
 
