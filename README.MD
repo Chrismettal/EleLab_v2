@@ -196,6 +196,8 @@ With this module you can use your 18 V Bosch batteries to supply a portable lab 
 
 The edge connectors are slid in from the inside of the case and lock into place.
 
+**Hint:** see also [standalone version](https://www.prusaprinters.org/prints/109595-bosch-18-v-battery-powerbank-power-supply)
+
 :warning: :warning: :warning: **This module is currently UNTESTED!** :warning: :warning: :warning:
 
 ![BoschEdges](img/BoschEdges.jpg)
