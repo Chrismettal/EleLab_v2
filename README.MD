@@ -15,7 +15,7 @@
   - [Supply from ATX/SFX](#supply-from-atxsfx)
   - [Supply from XT60/Barrel](#supply-from-xt60barrel)
   - [Supply from Meanwell PSU](#supply-from-meanwell-psu)
-  - [:warning: Supply from Bosch 18 V Battery](#warning-supply-from-bosch-18-v-battery)
+  - [Supply from Bosch 18 V Battery](#supply-from-bosch-18-v-battery)
   - [Lab PSU fixed](#lab-psu-fixed)
   - [Lab PSU variable](#lab-psu-variable)
   - [Oscilloscope DSO138](#oscilloscope-dso138)
@@ -188,17 +188,19 @@ The Meanwell supply should be a 24 V one, preferably the 150 W model, using the 
 - Meanwell RS-150-24
 - IEC C14 Plug with switch and fuse
 
-### :warning: Supply from Bosch 18 V Battery
+### Supply from Bosch 18 V Battery
 
 ![BoschRender](img/BoschRender.png)
 
+![BoschPurple](img/BoschPurple.jpg)
+
 With this module you can use your 18 V Bosch batteries to supply a portable lab system. It also uses the same step down converters for rails of 18 V - 12 V and 5 V. Additionaly you will need two locking blade edge connectors. These are widely used in the car industry for confectionable plugs. The part number I found was “8KW048056-033” for a 6.3mm blade with 2.5mm² wire capacity.
+
+Please note that 18 V Bosch batteries do NOT have over discharge protection built into the pack and can take damage if you run them below their specified "empty" point! Always watch the meter on your battery and make sure to use them in a healthy range. 
 
 The edge connectors are slid in from the inside of the case and lock into place.
 
 **Hint:** see also [standalone version](https://www.prusaprinters.org/prints/109595-bosch-18-v-battery-powerbank-power-supply)
-
-:warning: :warning: :warning: **This module is currently UNTESTED!** :warning: :warning: :warning:
 
 ![BoschEdges](img/BoschEdges.jpg)
 
