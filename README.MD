@@ -9,7 +9,7 @@
 - [The PCBs](#the-pcbs)
   - [Bus100 / Bus150](#bus100--bus150)
   - [PowerFeed](#powerfeed)
-  - [Frontpanel_a](#frontpanel_a)
+  - [Frontpanel\_a](#frontpanel_a)
 - [The modules](#the-modules)
   - [Supplies](#supplies)
   - [Supply from ATX/SFX](#supply-from-atxsfx)
@@ -46,9 +46,7 @@ For most of the modules a printbed of 160x160mm and 175mm of height is sufficien
 
 ![Showcase](img/Showcase.gif)
 
-If you like my work please consider supporting my caffeine addiction!
-
-<a href='https://ko-fi.com/U7U6G0X3' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+**If you like my work please consider [supporting my caffeine addiction](https://gitlab.com/Chrismettal#donations)!**
 
 ## Buying
 
